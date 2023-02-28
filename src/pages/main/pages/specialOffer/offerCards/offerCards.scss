@@ -1,0 +1,85 @@
+@import "src/style/mixins";
+
+.offerCards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+  margin-top: 100px;
+  flex-wrap: wrap;
+  @include small() {
+    padding: 5px;
+  }
+  &_list {
+    @include small() {
+      height: auto;
+      width: auto;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+    height: 212px;
+    max-width: 540px;
+
+    flex: 1 1 100%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    background: #66c05d;
+    gap: 65px;
+  }
+  &_section {
+    height: fit-content;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    & input {
+      border: none;
+      outline: none;
+      background: #ffffff;
+      border-radius: 30px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      padding: 9px 25px;
+
+      &::placeholder {
+        color: #c4c4c4;
+      }
+    }
+    & button {
+      box-sizing: border-box;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      color: #ffffff;
+      background: #66c05d;
+      border: none;
+      box-shadow: 0 0 0 2px #ffffff;
+      border-radius: 30px;
+      padding: 9px 29px;
+    }
+    &__title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+      color: #ffffff;
+    }
+    &__info {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+
+      color: #ffffff;
+    }
+  }
+}

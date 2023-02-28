@@ -1,0 +1,56 @@
+@import "src/style/mixins";
+.offerList {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  @include laptop() {
+    transition: 0.3s linear;
+
+    flex-wrap: wrap;
+  }
+  @include small() {
+    flex-wrap: wrap;
+  }
+  &_list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #ffffff;
+    padding: 25px 30px;
+    &__info {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+
+      color: #333333;
+    }
+    &__price {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 21px;
+      line-height: 25px;
+      text-align: center;
+      letter-spacing: 0.05em;
+
+      color: #000000;
+    }
+    & button {
+      background: #66c05d;
+      border-radius: 30px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      width: fit-content;
+      height: fit-content;
+      padding: 9px 40px;
+      color: #ffffff;
+      border: none;
+    }
+  }
+}

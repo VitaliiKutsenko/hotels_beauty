@@ -1,0 +1,35 @@
+.contacts {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+
+  &__wrapper {
+    column-gap: 40px;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+
+    & a {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      text-decoration: none;
+      color: #000000;
+    }
+    & button {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      height: fit-content;
+      color: #000000;
+      background: #ffffff;
+      border: 2px solid #66c05d;
+      border-radius: 40px;
+      padding: 12px 27px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import "src/style/mixins";
+
+.specialOffer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 70px;
+  &_header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 16px;
+    @include small() {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+}
